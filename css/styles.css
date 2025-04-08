@@ -471,8 +471,6 @@ display: flex;
 gap: 24px;
 }
 
-
-
 .footer-input {
     font-size: 12px;
     line-height: 2;
@@ -486,6 +484,7 @@ gap: 24px;
         height: 40px;
         padding-left: 16px;
         padding-right: 16px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .footer-btn {
@@ -501,13 +500,19 @@ border-radius: 4px;
     min-width: 165px;
 
     background-color: #4d5ae5;
-    border: none;   
+    border: none;
     
     display: flex;
     align-items: center;
-    justify-content: center;
-    
+    justify-content: center;    
     cursor: pointer;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-btn:hover,
+.ffooter-btn:focus {
+    background-color: #31d0aa;
 }
 
 .send-icon {
@@ -712,28 +717,7 @@ margin-left: 16px;
     font-size: 12px;
         line-height: 1.17;
         letter-spacing: 0.04em;
-        color: #8e8f99;
-        /* display: flex;
-        align-items: center; */
-        
-/* a {
-    line-height: 1.33;
-        text-decoration: underline;
-        text-decoration-skip-ink: none;
-        color: #4d5ae5;
-} */
-
-/* span {
-    width: 16px;
-    height: 16px;
-    border-radius: 2px;
-        border: 1px solid rgba(46, 47, 66, 0.4);        
-        margin-right: 8px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        fill: transparent;
-} */
+        color: #8e8f99;      
 }
 
 .modal-checkbox {
